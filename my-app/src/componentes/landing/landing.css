@@ -1,0 +1,20 @@
+.container1 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+  }
+
+
+.titulo-ins {
+   
+    border: 1rem;
+    border-color: aqua;
+    border-style: groove;
+    top: 0;
+    bottom: 0;
+}
+.titulo {
+    margin-left: 2rem;
+    font-size: 70px;
+  
+    font-family: 'Luxurious Roman', cursive; 
+}
+

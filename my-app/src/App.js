@@ -6,7 +6,7 @@ import Menu from './componentes/menu';
 function App() {
   return (
    <>
-      <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
 {/* 
   Menu
    */}
@@ -18,7 +18,7 @@ function App() {
 {/* 
   cARDS
  */}
- <Cards />
+   <Cards />
  
 
     </>

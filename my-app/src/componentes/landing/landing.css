@@ -12,7 +12,8 @@
     bottom: 0;
 }
 .titulo {
-    margin-left: 10rem;
+    margin-left: 2rem;
+    font-size: 70px;
   
     font-family: 'Luxurious Roman', cursive; 
 }

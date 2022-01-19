@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 .container1 {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    font-family:'Roboto';
   }
 
 
@@ -12,9 +14,8 @@
     bottom: 0;
 }
 .titulo {
-    margin-left: 2rem;
+    margin-left: 1rem;
     font-size: 70px;
-  
-    font-family: 'Luxurious Roman', cursive; 
+    font-family: 'Roboto', cursive; 
 }
 

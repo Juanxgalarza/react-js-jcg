@@ -1,25 +1,48 @@
-import React, { Component } from 'react';
-import './menu.css'
-function Menu() {
-  
-  return <div className='container2'>
+import * as React from 'react';
+import './menu.css';
+/* import ReactDOM from 'react-dom'; */
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
+
+
+const Menu = () => {
+
+
+  return(<>
+  
+  <div className='container2'>
     <div className="navbar">
+     
       <a href="#home">Inicio</a>
-      <a href="#news">Nosotros</a>
+      <a href="#about">Nosotros</a>
       <div className="dropdown">
         <button className="dropbtn">Tienda
         <i className="fa fa-caret-down"></i>
         </button>
           <div className="dropdown-content">
-          <a href="#">Carne</a>
-          <a href="#">Especias</a>
-          <a href="#">Utensilios de Cocina</a>
-
+          <Button variant="text" className="dropdown-content" href="/my-app/src/index.js">Ir a tienda</Button>
+          <Button variant="text" className="dropdown-content" href="/my-app/src/index.js">Especias</Button>
+          <Button variant="text" className="dropdown-content" href="/my-app/src/index.js">Utensilios</Button>
+          
         </div>
-      </div>
-    </div>
-  </div>;
-}
+    
 
+       
+      </div>
+
+  
+       <div className='widgetParent'>
+       <Stack direction="row" spacing={2}>
+        
+        <Button variant='outlined' className='botoncart'> <ShoppingCartIcon className='cartWidget' />Ir al carrito</Button>
+    
+        </Stack>
+     </div>
+
+    </div>
+  </div>
+  </> );
+}
 export default Menu;

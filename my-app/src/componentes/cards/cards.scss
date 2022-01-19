@@ -49,18 +49,21 @@ body {
 
           .carne {
             background-color: #fffc00;
+            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }
 
           .especias {
             background-color: #00fffc;
+            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }
 
           .utensilios {
             background-color: #fc00ff;
+            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }
@@ -84,7 +87,7 @@ body {
 
     .card:hover .face.face2 {
       height: 60px;
-
+s
       h2 {
         font-size: 2em;
       }

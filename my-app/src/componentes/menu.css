@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 body {
-  font-family: 'Luxurious Roman', cursive;
+  font-family: 'Roboto', cursive;
 }
 
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(65, 60, 60);
 }
 
 .navbar a {
@@ -65,4 +65,18 @@ margin-left: 5rem;
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.cartWidget {
+  position: relative;
+  background-color: rgb(0, 0, 0);
+  border-radius: 12%;
+  margin-right: 1rem;
+}
+.widgetParent {
+  margin-left: 1200px;
+  position: relative;
+}
+.botoncart {
+  position: relative;
 }

@@ -48,7 +48,7 @@ const CrudUsuarios = () => {
       const response = await fetch(`${URL}${id}`, { method: "DELETE" });
       const data = await response.json();
       console.log("Producto eliminado correctamente", data);
-    };
+    };git
   
     if (isLoading) {
       return <p>Cargando...</p>;

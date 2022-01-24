@@ -36,16 +36,16 @@ const Cards = () => {
         <span className="stars"></span>
         <h2 className="carne">Carne</h2>
         <p className="carne">La carne es buena para la salud, además si lees esto puede ser que hayas entendido el sentido de la vida</p>
-        <Fab color="primary" aria-label="add" onClick={counterC}>
+ {/*        <Fab color="primary" aria-label="add" onClick={counterC}>
         <AddIcon />{counter3}
-      </Fab>
+      </Fab> */}
       </div>
     </div>
     <div className="face face2">
       <h2>01</h2>
     </div>
   </div>
-
+{/* 
   <div className="card">
     <div className="face face1">
       <div className="content">
@@ -79,12 +79,12 @@ const Cards = () => {
       <h2>03</h2>
     </div>
   </div>
-</div>
-  </>
-   
-    
-    
 
+  </>
+    */}
+    
+    
+    </div>
     );
     
     

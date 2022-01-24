@@ -3,19 +3,19 @@
 .container1 {
     font-family:'Roboto';
   }
-
-
-.titulo-ins {
-   
-    border: 1rem;
-    border-color: aqua;
-    border-style: groove;
-    top: 0;
-    bottom: 0;
-}
-.titulo {
-    margin-left: 1rem;
+.titulo {   
+    margin-left: 5rem;
     font-size: 70px;
-    font-family: 'Roboto', cursive; 
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Righteous", cursive;
+  background-color: #a9c9ff;
+  background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
+}

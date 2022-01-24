@@ -14,7 +14,7 @@ const Cards2 = (props) => {
   {Array.from({ length: 4 }).map((_, idx) => (
     <Col>
       <Card>
-        <Card.Img variant="top" src={props.src} />
+        <Card.Img variant="top" src={props.src} key="uniqueId1" />
         <Card.Body>
           <Card.Title>{props.titulo}</Card.Title>
           <Card.Text>

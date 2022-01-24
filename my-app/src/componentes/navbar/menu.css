@@ -1,21 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
-body {
-  font-family: 'Roboto', cursive;
-}
 
 .navbar {
-  overflow: hidden;
   background-color: rgb(65, 60, 60);
+  width: 100vw;
 }
 
 .navbar a {
-  float: left;
+
+  float: right;
   font-size: 16px;
   color: white;
-  text-align: center;
-  padding: 14px 16px;
+  text-align: right;
+  padding: 14px 60px;
   text-decoration: none;
 }
 
@@ -64,7 +62,7 @@ margin-left: 5rem;
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  display:grid;
 }
 
 .cartWidget {
@@ -74,7 +72,7 @@ margin-left: 5rem;
   margin-right: 1rem;
 }
 .widgetParent {
-  margin-left: 1200px;
+  margin-left: auto;
   position: relative;
 }
 .botoncart {

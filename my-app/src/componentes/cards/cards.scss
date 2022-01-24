@@ -1,32 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Righteous", cursive;
-  min-height: 100vh;
-  background-color: #a9c9ff;
-  background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
+
+  .filitas {
+    margin-left: 5rem;
+  }
 
   .container {
-    max-width: 100vw;
+    max-width: 30vw;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 35px;
+    grid-template-columns: repeat(auto-fit, minmax(3px, 1fr));
+    grid-row: auto;
+    grid-gap: 5px;
     margin: 0 auto;
     padding: 40px 0;
 
     .card {
+
       position: relative;
-      width: 300px;
-      height: 400px;
+      width: 30px;
+      height: 40px;
       margin: 0 auto;
-      background: #000;
+      background: rgb(0, 0, 0);
       border-radius: 15px;
-      box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 15px 60px rgba(88, 87, 87, 0.5);
 
       .face {
         position: absolute;
@@ -48,7 +44,7 @@ body {
           }
 
           .carne {
-            background-color: #fffc00;
+            background-color: #ffffff;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -78,7 +74,7 @@ body {
             font-size: 10em;
             color: #fff;
             transition: 0.5s;
-            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            text-shadow: 0 2px 5px rgba(70, 70, 70, 0.2);
             z-index: 10;
           }
         }
@@ -123,4 +119,8 @@ s
       border-radius: 15px;
     }
   }
+
+
+.flex {
+  flex: 1;
 }

@@ -5,22 +5,31 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 
-const Cards2 = (props) => {
+const Item = (props) => {
+
+
+
     return(
 
 <>
 
 <Row className='filitas' xs={1} md={4}>
-  {Array.from({ length: 4 }).map((_, idx) => (
+  {Array.from({ length: 1 }).map((_, idx) => (
     <Col>
       <Card>
         <Card.Img variant="top" src={props.src} key="uniqueId1" />
         <Card.Body>
-          <Card.Title>{props.titulo}</Card.Title>
+          <Card.Title>Disfrute de: {props.titulo}</Card.Title>
           <Card.Text>
+            Informate sobre:
             {props.paragraph}
               </Card.Text>
               <Card.Text>
+                El valor del producto es:
+            {props.price}
+              </Card.Text> 
+              <Card.Text>
+               ID:{props.id}
             {props.price}
               </Card.Text> 
         </Card.Body>
@@ -34,4 +43,4 @@ const Cards2 = (props) => {
 </>
  ); 
 }
-export default Cards2;
+export default Item;

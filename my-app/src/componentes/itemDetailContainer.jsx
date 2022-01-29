@@ -23,7 +23,7 @@ const getData = async () => {
     console.log(result);
 
   } catch (error) {
-    console.log('Se pudrio todo');
+    console.log('Error');
   }
 }
 getData();

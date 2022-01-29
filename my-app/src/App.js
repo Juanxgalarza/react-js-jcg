@@ -3,6 +3,7 @@ import Item from './componentes/cards/Item';
 import Landing from './componentes/landing/landin';
 import Menu from './componentes/navbar/menu';
 import Counter from './componentes/itemCount/itemCount'
+import ItemList from './componentes/itemList/itemList';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
     <Menu />
   
   <Landing />
+  <ItemList />
 
 
 <Counter productCant='12' stock={12}/>

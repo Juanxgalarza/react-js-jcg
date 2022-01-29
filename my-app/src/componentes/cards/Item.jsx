@@ -19,7 +19,7 @@ const Item = (props) => {
       <Card>
         <Card.Img variant="top" src={props.src} key={props.id} />
         <Card.Body>
-          <Card.Title>Disfrute de: {props.titulo}</Card.Title>
+          <Card.Title>{props.titulo}</Card.Title>
           <Card.Text>
             Informate sobre:
             {props.paragraph}

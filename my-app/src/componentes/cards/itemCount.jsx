@@ -40,6 +40,7 @@ const array = [
         key={e.id}
         titulo={e.titulo}
         price={e.price}
+        stock={e.stock}
         src={e.src} />
     );
   })

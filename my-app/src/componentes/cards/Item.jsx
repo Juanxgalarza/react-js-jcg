@@ -1,11 +1,11 @@
 import * as React from 'react';
 import Card from 'react-bootstrap/Card';
-import './cards.scss';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Counter from './Counter';
 
 
-const Item = (props) => {
+ const Item = (props) => {
 
 
 
@@ -21,17 +21,24 @@ const Item = (props) => {
         <Card.Body>
           <Card.Title>{props.titulo}</Card.Title>
           <Card.Text>
-            Informate sobre:
             {props.paragraph}
               </Card.Text>
               <Card.Text>
-                El valor del producto es:
             {props.price}
               </Card.Text> 
               <Card.Text>
                ID:{props.id}
-            {props.price}
+
+      
               </Card.Text> 
+              <Card.Text>
+          
+            Stock disponible: {props.stock}
+              </Card.Text>
+              <Card.Text>
+              <Counter stock={props.stock} />
+             
+              </Card.Text>
         </Card.Body>
       </Card>
     </Col>

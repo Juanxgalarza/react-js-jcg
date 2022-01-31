@@ -14,7 +14,8 @@ const array = [
       paragraph: 'La carne es buena para la salud, además si lees esto puede ser que hayas entendido el sentido de la vida',
       price: "$1200/kg",
       src:
-          "https://picsum.photos/750"
+          "https://picsum.photos/750",
+       stock: 12
   },
   {
       id: 2,
@@ -22,8 +23,9 @@ const array = [
       price: "$79/gr",
       paragraph: 'Las especias condimentan nuestros alimentos proporcionando gusto y cualidades únicas que tienen y portan.',
       src:
-          "https://picsum.photos/751"
-  },
+          "https://picsum.photos/751",
+          stock: 12
+  }9
   {
       id: 3,
       titulo: "Utensilios",

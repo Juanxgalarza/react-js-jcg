@@ -1,9 +1,9 @@
 import './App.css';
-import Home from './pages/Home';
 import Navbar from './componentes/navbar/Navbar';
-import Tienda from './pages/Tienda'
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import ItemList from './componentes/cards/itemList';
+import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import Errorpage from './pages/Error';
+import Landing from './componentes/landing/landin';
 
 function App() {
 
@@ -13,13 +13,20 @@ function App() {
    <>
  <Router>
      <nav>
+       <Link to='/'>
        <Navbar/>
+       </Link>
      </nav>
     <Routes>
   
-       <Route path ='/' element={<Home />}/>
-       <Route path ='/nosotros' element={<Tienda />}/>
-       <Route path ='/tienda' />
+       <Route path ='/' element={<Landing />}/>
+       <Route path ='/tienda' element={<>
+        <Landing />
+        <ItemList /> 
+       </>
+       }
+   />
+       <Route path ='/nosotros' />
        <Route path='*' element={<Errorpage />} />
     </Routes>
  </Router>

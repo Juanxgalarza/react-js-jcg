@@ -10,8 +10,7 @@ const Landing = () => {
         <h1 className='texto-cortado'>Mercado React</h1>     
        <hr />
     </div>
-        <h2>Bienvenido al mercado en React</h2>
-        <p>Podes encontrar todas las novedades aqui:</p>
+     
  </div>
         
         

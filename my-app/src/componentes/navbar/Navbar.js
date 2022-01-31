@@ -12,6 +12,7 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import { Link } from 'react-router-dom';
 
 
 const pages = ['Nuestros Productos', 'Tienda', 'Acerca de nosotros'];
@@ -80,7 +81,7 @@ const Navbar = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}  </Typography>
+                  <Typography textAlign="center">{page}</Typography>
                   <ShoppingCartIcon />
                 </MenuItem>
               ))}

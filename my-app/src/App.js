@@ -4,6 +4,8 @@ import ItemList from './componentes/cards/itemList';
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import Errorpage from './pages/Error';
 import Landing from './componentes/landing/landin';
+import ItemDetail from './componentes/cards/ItemDetail';
+import Home from './pages/Home';
 
 function App() {
 
@@ -13,26 +15,22 @@ function App() {
    <>
  <Router>
      <nav>
-       <Link to='/'>
        <Navbar/>
-       </Link>
      </nav>
     <Routes>
   
-       <Route path ='/' element={<Landing />}/>
+       <Route path ='/' element={<Home />}/>
        <Route path ='/tienda' element={<>
         <Landing />
         <ItemList /> 
        </>
        }
    />
-       <Route path ='/nosotros' />
+       <Route path ='/detail' element={<ItemDetail />} />
        <Route path='*' element={<Errorpage />} />
     </Routes>
  </Router>
 
-{/* 
-  <ItemList/> */}
 
     </>
   )}

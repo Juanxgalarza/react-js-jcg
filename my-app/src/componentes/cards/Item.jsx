@@ -3,6 +3,8 @@ import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Counter from './Counter';
+import { Link } from 'react-router-dom';
+import Button from '@mui/material/Button';
 
 
  const Item = (props) => {
@@ -29,15 +31,16 @@ import Counter from './Counter';
               <Card.Text>
                ID:{props.id}
 
-      
+              <Button>
+              <Link to='/detail'>Ver detalles</Link>
+                </Button>
               </Card.Text> 
               <Card.Text>
           
             Stock disponible: {props.stock}
               </Card.Text>
               <Card.Text>
-              <Counter stock={props.stock} />
-             
+              
               </Card.Text>
         </Card.Body>
       </Card>

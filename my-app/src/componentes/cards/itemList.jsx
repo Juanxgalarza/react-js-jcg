@@ -1,5 +1,6 @@
 import './itemCount.css';
 import Item from './Item';
+import { Link } from '@mui/material';
 
 const array = [
   {
@@ -22,7 +23,7 @@ const array = [
   {
       id: 3,
       titulo: "Utensilios",
-      price: "$buenprecio",
+      price: "$200/par",
       paragraph: 'Los utensilios cambiaron la forma en que comemos, uala.',
       src: "https://picsum.photos/182",
       stock: 10
@@ -38,10 +39,12 @@ const ItemList = () => {
           id={e.id}
           titulo={e.titulo}
           paragraph={e.paragraph}
-          price={e.price}
+      /*     price={e.price} */
           src={e.src}
-          stock={e.stock}
+      /*    stock={e.stock} */
+       
         />
+        
         
       ))}
     

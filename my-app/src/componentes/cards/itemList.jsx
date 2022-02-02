@@ -1,55 +1,59 @@
 import './itemCount.css';
+import React, { useState, useEffect} from 'react'
+import axios from 'axios';
 import Item from './Item';
-import { Link } from '@mui/material';
+import { Link, useParams } from 'react-router-dom';
+import { Button } from '@mui/material';
+const URL = 'https://61fad67687801d0017a2c2d0.mockapi.io/products'
+  
+function ItemList() {
 
-const array = [
-  {
-      id: 1,
-      titulo: "Carne premiun",
-      paragraph: 'La carne es buena para la salud, además si lees esto puede ser que hayas entendido el sentido de la vida',
-      price: "$1200/kg",
-      src: "https://picsum.photos/150",
-      stock: 8
-  },
-  {
-      id: 2,
-      titulo: "Especias importadas",
-      price: "$79/gr",
-      paragraph: 'Las especias condimentan nuestros alimentos proporcionando gusto y cualidades únicas que tienen y portan.',
-      src: "https://picsum.photos/181",
-      stock: 3
-  },
+    const [loading, setLoading] = useState(false);
+    const [products, setProducts] = useState([]);
+   
 
-  {
-      id: 3,
-      titulo: "Utensilios",
-      price: "$200/par",
-      paragraph: 'Los utensilios cambiaron la forma en que comemos, uala.',
-      src: "https://picsum.photos/182",
-      stock: 10
-  }
-
-];
-
-const ItemList = () => {
-  return (
-    <>
-      {array.map((e) => (
-        <Item
-          id={e.id}
-          titulo={e.titulo}
-          paragraph={e.paragraph}
-      /*     price={e.price} */
-          src={e.src}
-      /*    stock={e.stock} */
-       
-        />
+    useEffect(() => {
+        const loadData = async () => {
+  
+           
+            setLoading(true);
+  
+            
+            const response = await axios.get(
+            URL);
+  
+           
+            setProducts(response.data);
+  
+         
+            setLoading(false);
+        }
+  
+        loadData();
         
-        
-      ))}
-    
-    </>
-  );
-};
+    }, []);
+
+    return (
+        <>
+       <ul>
+
+        {loading ?<h1>Cargando...</h1> : products.map((e) => {
+          return (
+            <>
+              <Item key={e.id} id={e.id} titulo={e.titulo} paragraph={e.paragraph} stock={e.stock} src={e.src} />
+
+              <Button>
+
+                <Link to={`products/${e.id}`}>Ver mas detalles...</Link>
+              </Button>
+            </>
+
+          );
+        })}
+      </ul>
+     </>
+    )
+    ;
+}
 
 export default ItemList;

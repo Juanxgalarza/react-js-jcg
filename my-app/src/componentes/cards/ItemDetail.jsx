@@ -57,7 +57,10 @@ export default function Detail() {
                 {products.paragraph}
               </Typography>
               <Typography variant='body2' color='text.secondary'>
+                <Link to='/cart'>
                 <Button onClick={handleStockClick} >Añadir al Carrito</Button>
+                </Link>
+               
               </Typography>
             </CardContent>
             <CardActions>

@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
-const Errorpage = () => {
+const Error = () => {
     <>
     
     <h1>ERROR PAGE NOT FOUND </h1>
-    <Link>
+    <Link to='/'>
      <button>Volver atras</button>
      </Link>
     
@@ -13,4 +13,4 @@ const Errorpage = () => {
 }
   
    
-export default Errorpage;
+export default Error;

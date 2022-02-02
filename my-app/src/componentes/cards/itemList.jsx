@@ -2,7 +2,7 @@ import './itemCount.css';
 import React, { useState, useEffect} from 'react'
 import axios from 'axios';
 import Item from './Item';
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Button } from '@mui/material';
 const URL = 'https://61fad67687801d0017a2c2d0.mockapi.io/products'
   

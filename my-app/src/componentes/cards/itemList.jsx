@@ -44,7 +44,7 @@ function ItemList() {
 
               <Button>
 
-                <Link to={`products/${e.id}`}>Ver mas detalles...</Link>
+                <Link to={`/products/${e.id}`}>Ver mas detalles...</Link>
               </Button>
             </>
 

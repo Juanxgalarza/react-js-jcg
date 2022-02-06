@@ -82,6 +82,12 @@ const Navbar = () => {
                 <MenuItem onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">
                   <Link to='/'>Home</Link>
+              
+                    </Typography>
+                </MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">
+                  
                   <Link to='/tienda'>Tienda</Link>
                     </Typography>
                   <ShoppingCartIcon />

@@ -6,7 +6,7 @@ import Error from './pages/Error';
 import Landing from './componentes/landing/landin';
 import Home from './pages/Home';
 import Detail from './componentes/cards/ItemDetail';
-import CartHandler from './componentes/cards'
+import CartHandler from './componentes/cards/cartHandler';
 
 function App() {
 
@@ -32,7 +32,7 @@ function App() {
 
        <Route path ='/products/:id' element={<Detail />} />
        <Route parh ='/cart:id' element={<CartHandler />}/>
-        <Route path='*' element={<Error />} />
+      {/*   <Route path='*' element={<Error />} /> */}
     </Routes>
  </Router>
 

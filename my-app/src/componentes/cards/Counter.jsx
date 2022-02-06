@@ -9,6 +9,7 @@ const Counter = (props) => {
   const resta = () => {
     if (counter === 0) return;
     setCounter(counter - 1);
+    
   };
 
 

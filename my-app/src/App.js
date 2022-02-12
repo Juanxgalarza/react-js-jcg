@@ -1,9 +1,9 @@
 
 import Navegacion from './componentes/navbar/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ItemList from './componentes/cards/itemList';
 import {BrowserRouter as Router, Routes, Route, /* Link */} from 'react-router-dom';
 import Home from './pages/Home';
+import Paginaerror from './pages/Error';
 import Detail from './componentes/cards/ItemDetail';
 import Context from './componentes/context/contextoGlobal';
 

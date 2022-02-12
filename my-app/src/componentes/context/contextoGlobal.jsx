@@ -33,22 +33,26 @@ const Cart = createContext();
       
       
   }, []); 
+    const [state, dispatch] =  useReducer(carritoReducer, {
+      loading: loading,
+      products: products,
+      cart: [],
+    });
+    
+     return (<>
+      {loading ? (
+      <h1>Cargando...</h1>
+    ) : ( <Cart.Provider value={{state, dispatch}}> {children} </Cart.Provider> 
+      )
+  }
+    </>)
+   
+  
 
-  const [state, dispatch] =  useReducer(carritoReducer, {
-    loading: loading,
-    products: products,
-    cart: [],
-  });
 
-
-  return ( 
-<Cart.Provider value={{state, dispatch}}> {children} </Cart.Provider> 
-  );
 }
-
 export default Context;
 
 export const CarritoEstado=()=> {
-  return useContext(Cart);
-
-};
+  return useContext(Cart) 
+}

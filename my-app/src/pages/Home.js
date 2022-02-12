@@ -1,12 +1,30 @@
 import React from "react";
 import Landing from "../componentes/landing/landin";
+import { CarritoEstado } from "../componentes/context/contextoGlobal";
+import Item from "../componentes/cards/Item";
+
 
 const Home = () => {
+
+    const { state:{ products } } =  CarritoEstado();
+
     return (
 <>
     <Landing />
-    <h2>En este sitio podras encontrar todo lo que necesitas para ser feliz</h2>
-    <p>lorem ipsum momentum ipsiabulum limpidus trequitus</p>
+
+<div>
+    {/* Filtros */}
+</div>
+
+<div>
+ {products.map((prod) => { 
+        return( 
+<Item key={prod.id} id={prod.id} titulo={prod.titulo} stock={prod.stock} src={prod.src} delivery={prod.delivery}  />
+        )   
+    })};
+    
+</div>
+   
     </>
     )
     

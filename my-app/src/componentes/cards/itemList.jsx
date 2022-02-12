@@ -1,4 +1,4 @@
-import './itemCount.css';
+
 import React, { useState, useEffect} from 'react'
 import axios from 'axios';
 import Item from './Item';
@@ -39,14 +39,24 @@ function ItemList() {
 
         {loading ?<h1>Cargando...</h1> : products.map((e) => {
           return (
+            
             <>
-              <Item key={e.id} id={e.id} titulo={e.titulo} paragraph={e.paragraph} stock={e.stock} src={e.src} />
-
+              <Item key={e.id} id={e.id} titulo={e.titulo} stock={e.stock} src={e.src} delivery={e.delivery} />
               <Button>
 
                 <Link to={`/products/${e.id}`}>Ver mas detalles...</Link>
               </Button>
             </>
+
+
+
+
+
+
+
+
+
+
 
           );
         })}

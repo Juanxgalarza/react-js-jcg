@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import React from "react";
-import Badge from "@mui/icons-material/Badge";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import axios from 'axios';
 import { useParams, Link } from 'react-router-dom';
@@ -11,7 +10,6 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import Counter from './Counter';
 import { Button } from '@mui/material';
-import CartHandler from "./cartHandler";
 
 
 
@@ -20,10 +18,12 @@ export default function Detail() {
   const [loading, setLoading] = useState(false);
   const [products, setPosts] = useState([]);
   const { id } = useParams();
-  const URL = `https://61fad67687801d0017a2c2d0.mockapi.io/products/${id}`;
-
+  
+  
 
   useEffect(() => {
+    
+    const URL = `https://61fad67687801d0017a2c2d0.mockapi.io/products/${id}`;
     const loadPost = async () => {
       //mostrar loading
       setLoading(true);
@@ -35,21 +35,6 @@ export default function Detail() {
     };
     loadPost();
   }, []);
-
-
-  const [cart, setCart] = useState([]);
-  const [productInCart, setProductInCart] = useState(true);
-  const [itemCount, setItemCount] = useState(0);
-
- 
-
-  const handleStockClick = () => {   
-    return (
-      <CartHandler id={products.id} titulo={products.titulo} price={products.price} stock={products.stock} />
-    
-    )
-  
-  }
 
 
   return (
@@ -87,8 +72,8 @@ export default function Detail() {
               <Counter stock={products.stock}  />
              
               <ShoppingCartIcon />{" "}
-              <Link to={`/cart:${id}`} >
-                <Button onClick={handleStockClick} >  
+              <Link to='/cart' >
+                <Button >  
               
                 Añadir al Carrito
                  

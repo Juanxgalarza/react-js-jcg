@@ -12,11 +12,11 @@ import Col from 'react-bootstrap/Col';
 
 <>
 
-<Row className='filitas' xs={1} md={4}>
-  {Array.from({ length: 1 }).map((_, idx) => (
+<Row className='filitas' xs={2} md={4}>
+ 
     <Col>
       <Card>
-        <Card.Img variant="top" src={props.src} key={props.id} />
+        <Card.Img src={props.src} key={props.id} />
         <Card.Body>
           <Card.Title>{props.titulo}</Card.Title>
           <Card.Text>
@@ -27,19 +27,13 @@ import Col from 'react-bootstrap/Col';
               </Card.Text> 
               <Card.Text>
                ID:{props.id}
-
               </Card.Text> 
-              <Card.Text>
-          
+              <Card.Text>   
             {props.stock}
-              </Card.Text>
-              <Card.Text>
-              
               </Card.Text>
         </Card.Body>
       </Card>
     </Col>
-  ))}
 </Row>
 
 

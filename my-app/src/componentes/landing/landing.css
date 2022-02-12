@@ -5,17 +5,5 @@
   }
 .titulo {   
     margin-left: 5rem;
-    font-size: 70px;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: "Righteous", cursive;
-  background-color: #a9c9ff;
-  background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
+    margin: auto;
 }
